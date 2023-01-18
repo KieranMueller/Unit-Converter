@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Unit Converter</h1>
+        <input type="number" id="initialNum" value="0" />
+        <select id="dropdown" autofocus onchange="selectUnits()">
+          <option value="select">Select Units</option>
+          <option value="inches">Inches</option>
+          <option value="feet">Feet</option>
+          <option value="yards">Yards</option>
+          <option value="meters">Meters</option>
+        </select>
+        <p>to</p>
+        <select
+          id="dropdown2"
+          autofocus
+          value=""
+          onchange="selectConvertUnits()"
+        >
+          <option value="select">Select Units</option>
+          <option value="inches">Inches</option>
+          <option value="feet">Feet</option>
+          <option value="yards">Yards</option>
+          <option value="meters">Meters</option>
+        </select>
+        <button onclick="convert()">Convert!</button>
+        <p class="answer"></p>
+        <h2 id="test"></h2>
+      </header>
+      <main>
+        <div></div>
+        <div></div>
+        <div></div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
